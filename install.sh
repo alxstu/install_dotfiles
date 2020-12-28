@@ -28,11 +28,9 @@ function ask_for_sudo() {
 }
 
 function ask_for_github_access() {
-while true; do
     read -p "Enter github user token: " TOKEN
     GITHUB_TOKEN=$TOKEN
-    break
-done
+    success "github token updated: ${GITHUB_TOKEN}"
 } 
 
 function install_xcode_command_line_tools() {
