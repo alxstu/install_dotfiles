@@ -28,10 +28,12 @@ function ask_for_sudo() {
 }
 
 function ask_for_github_access() {
-	info "Enter github user token: "
-	read TOKEN
-	GITHUB_TOKEN=$TOKEN
-}
+while true; do
+    read -p "Enter github user token: " TOKEN
+    GITHUB_TOKEN=$TOKEN
+    break
+done
+} 
 
 function install_xcode_command_line_tools() {
     info "Installing Xcode command line tools"
