@@ -28,9 +28,9 @@ function ask_for_sudo() {
 }
 
 function ask_for_github_access() {
-        read -p "Enter github user token: " TOKEN
-        GITHUB_TOKEN=TOKEN
-   } 
+        read -p "Enter github user token: " GITHUB_TOKEN
+
+} 
 
 function install_xcode_command_line_tools() {
     info "Installing Xcode command line tools"
